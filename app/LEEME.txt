@@ -1,0 +1,16 @@
+RECUPERA · carpeta de publicacion
+=================================
+Esto y SOLO esto se sube al hosting. Arrastra ESTA carpeta a Netlify.
+
+  index.html      la aplicacion (RECUPERA_v5_4_1.html renombrado)
+  vendor/         cliente Supabase oficial, fijado por SHA e integridad
+  iconos/         iconos de instalacion en Android
+  manifest.json   permite instalar la app en la pantalla de inicio
+  sw.js           funcionamiento sin conexion
+  _headers        cabeceras de seguridad y cache (Netlify las aplica solo)
+
+NO subas aqui: sql/, evidencia/, *.md, *.mjs, *.py ni el ZIP de trabajo.
+Todo lo que este en esta carpeta queda PUBLICO en internet.
+
+config.js va declarado en "local": la app arranca sin tocar la nube.
+Se reemplaza por el de produccion recien cuando RLS este verificado (Bloque 4).

@@ -1,0 +1,9 @@
+{
+  "url":       "https://TU-PROYECTO-QA.supabase.co",
+  "anonKey":   "sb_publishable_...",
+  "emailA":    "cuenta-prueba-a@ejemplo.cl",
+  "passwordA": "NO-PONER-AQUI-LA-REAL",
+  "emailB":    "cuenta-prueba-b@ejemplo.cl",
+  "passwordB": "NO-PONER-AQUI-LA-REAL",
+  "dedicado":  "YES"
+}

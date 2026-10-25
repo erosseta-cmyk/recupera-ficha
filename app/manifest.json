@@ -1,0 +1,19 @@
+{
+  "id": "/",
+  "name": "RECUPERA · ficha kinesiológica",
+  "short_name": "RECUPERA",
+  "description": "Registro clínico y rehabilitación domiciliaria",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#0E7C7B",
+  "lang": "es-CL",
+  "dir": "ltr",
+  "icons": [
+    { "src": "./iconos/icono-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "./iconos/icono-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "./iconos/icono-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

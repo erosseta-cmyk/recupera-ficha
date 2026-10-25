@@ -1,0 +1,10 @@
+# Nunca subir: contraseñas, claves ni datos de pacientes
+qa/qa.config.json
+qa/cmd.txt
+qa/resultado_*.json
+qa/node_modules/
+*.env
+*.csv
+*.xlsx
+*.sqlite
+*.db

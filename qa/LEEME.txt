@@ -1,0 +1,33 @@
+RECUPERA · verificacion de RLS
+==============================
+Comprueba, con evidencia, que la base de datos QA esta cerrada:
+que un anonimo no lee nada y que un kinesiologo no ve al otro.
+
+ANTES DE EMPEZAR necesitas:
+  · el proyecto Supabase QA creado
+  · el SQL 1_aplicar_en_supabase.sql ya ejecutado en ese proyecto
+  · dos cuentas de prueba creadas y vinculadas en la tabla kinesiologos
+  · Node instalado (comprueba con: node -v)
+
+PASOS
+  1. Abre qa.config.json con el Bloc de notas y rellena los seis valores.
+     Guarda con Ctrl+S.
+
+  2. Abre una terminal EN ESTA CARPETA.
+     Windows: escribe  cmd  en la barra de direcciones del explorador y Enter.
+
+  3. Escribe:      npm install
+     Espera a que termine (descarga el cliente oficial de Supabase).
+
+  4. Escribe:      npm run verificar
+
+QUE ESPERAR
+  Una tabla con 15 filas y, al final, "15/15 verificaciones pasan".
+  Si algo falla, el propio texto dice cual y por que. No sigas hasta que este en 15/15.
+  Se genera resultado_rls.json: guardalo como evidencia.
+
+IMPORTANTE
+  qa.config.json contiene contrasenas. No lo subas a Netlify, ni a GitHub,
+  ni lo envies por correo o WhatsApp. Vive solo en tu computador.
+  El script crea registros de prueba marcados QA-STG-*; al terminar te muestra
+  la linea SQL para borrarlos.

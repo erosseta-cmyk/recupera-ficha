@@ -1,0 +1,8 @@
+-- Conexión Ascenso -> ficha clínica (aplicada el 25-10-2026 en el proyecto "recupera")
+-- CONSERVAR al modernizar la ficha:
+--   · tabla  public.indicaciones_ascenso   (ejercicios indicados en Ascenso, por paciente)
+--   · función public.recibir_indicacion_ascenso(p_clave, p_origen_id, p_share, p_correo, p_items, p_indicado_en, p_prueba)
+--   · esquema conexion.claves               (clave interna; NO exponer, NO copiar a este repositorio)
+--   · disparador pacientes_vincula_ascenso  (al agregar el correo de un paciente, se le asignan sus indicaciones)
+-- La unión entre Ascenso y la ficha es el correo del paciente.
+-- El envío vive en Ascenso (app.ficha_outbox, cada 10 min, con reintentos) y la mantiene despierta 2 veces al día.

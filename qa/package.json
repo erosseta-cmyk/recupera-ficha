@@ -1,0 +1,12 @@
+{
+  "name": "recupera-verificacion-rls",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "verificar": "node verificar_rls.mjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "2.112.3"
+  }
+}
